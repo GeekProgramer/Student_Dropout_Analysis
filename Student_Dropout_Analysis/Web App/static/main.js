@@ -1,31 +1,31 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Initialize Chart.js
+   
     const ctx = document.getElementById('myChart').getContext('2d');
     let myChart;
-    let tabledata; // Define tabledata in a higher scope
+    let tabledata; 
 
-    // Function to fetch data based on selected options
+    
     async function fetchData(category, selectedClass, year) {
         try {
-            // Define the URL for the CSV file based on the selected year (assuming 'data' folder for CSV files)
+            
             const url = `static/dataset.csv`;
 
-            // Fetch the CSV data
+            
             const response = await fetch(url);
-            tabledata = await response.text(); // Set the tabledata variable
+            tabledata = await response.text(); 
 
-            // Parse the CSV data
+            
             const labels = [];
             const data1 = [];
             const data2 = [];
             const data3 = [];
 
-            // Find the appropriate column names based on the selected options
+            
             const boysColumnName = `${category} - ${selectedClass} - Boys_${year}`;
             const girlsColumnName = `${category} - ${selectedClass} - Girls_${year}`;
             const totalColumnName = `${category} - ${selectedClass} - Total_${year}`;
 
-            // Split the CSV data into rows and process each row
+            
             const table = tabledata.split('\n').slice(1);
             table.forEach(row => {
                 const column = row.split(',');
@@ -42,33 +42,33 @@ document.addEventListener("DOMContentLoaded", function () {
             return { labels, data1, data2, data3 };
         } catch (error) {
             console.error("Error fetching data:", error);
-            throw error; // Rethrow the error to handle it further if needed
+            throw error; 
         }
     }
 
-    // Function to get the column index based on its name
+    
     function getColumnIndex(columnName) {
         const headers = tabledata.split('\n')[0].split(',');
         return headers.indexOf(columnName);
     }
 
-    // Function to update the chart based on selected options
+    
     async function updateChart() {
         const category = document.getElementById("categoryDropdown").value;
         const selectedClass = document.getElementById("classDropdown").value;
         const year = document.getElementById("yearDropdown").value;
 
         try {
-            // Fetch data based on selected options
+            
             const data = await fetchData(category, selectedClass, year);
 
-            // Update or create the chart
+            
             if (myChart) {
-                myChart.destroy(); // Destroy the existing chart if it exists
+                myChart.destroy(); 
             }
 
             myChart = new Chart(ctx, {
-                type: 'line', // Change the chart type as needed
+                type: 'line', 
                 data: {
                     labels: data.labels,
                     datasets: [
@@ -108,16 +108,16 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    // Add event listeners to the dropdown menus
+    
     document.getElementById("categoryDropdown").addEventListener("change", async () => {
-        await updateChart(); // Await the async function call
+        await updateChart(); 
     });
     document.getElementById("classDropdown").addEventListener("change", async () => {
-        await updateChart(); // Await the async function call
+        await updateChart(); 
     });
     document.getElementById("yearDropdown").addEventListener("change", async () => {
-        await updateChart(); // Await the async function call
+        await updateChart(); 
     });
-    // Initial chart creation with default values
+  
     updateChart();
 });

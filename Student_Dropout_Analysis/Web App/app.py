@@ -9,8 +9,11 @@ def main():
 
 
 @app.route('/analysis.html')
-def index():
+def analysis():
     return render_template('analysis.html')
 
+@app.route('/index.html')
+def index():
+    return render_template('index.html')
 
-app.run(debug=True)
+app.run(debug=False)
