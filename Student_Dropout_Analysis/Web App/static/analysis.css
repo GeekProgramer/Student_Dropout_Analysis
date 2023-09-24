@@ -173,6 +173,48 @@ text-decoration: none;
   top: 2vh;
   margin-bottom: 4%;
 }
+.type {
+  position: relative;
+  top:38px;
+  left: -130px;
+}
+
+.type select {
+  padding: 6px;
+  font-size: 16px;
+  border: 2px solid #007bff; 
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #fff; 
+  color: #333; 
+  transition: all 0.3s ease; 
+  position: relative;
+  top: 10.2vh;
+  left: 25vw;
+}
+
+
+.type select:hover {
+  border-color: #66d9ff; 
+  box-shadow: 0 0 10px rgba(102, 217, 255, 0.5); 
+  transform: scale(1.02); 
+}
+
+
+.type select::after {
+  content: "\25BC"; 
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  
+  pointer-events: none; 
+}
+
+
+.type select:hover::after {
+  color: #66d9ff;
+}
 
 .category {
   position: relative;
@@ -191,7 +233,7 @@ text-decoration: none;
   transition: all 0.3s ease; 
   position: relative;
   top: 10vh;
-  left: 25vw;
+  left: 27vw;
 }
 
 
@@ -271,8 +313,8 @@ background-color: #fff;
 color: #333; 
 transition: all 0.3s ease; 
 position: relative;
-left: 68vw;
-top: 0vh;
+left: 65vw;
+top: 3px;
 }
 
 .year select:hover,
