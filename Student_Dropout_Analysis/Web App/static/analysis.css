@@ -75,7 +75,7 @@ top: 6vh;
 button {
   display: flex;
   height: 3em;
-  width: 100px;
+  width: 90px;
   align-items: center;
   justify-content: center;
   background-color: #eeeeee4b;
@@ -86,8 +86,8 @@ button {
   border: none;
   background: #fff;
   position: relative;
-  top: -40vh;
-  left: 92vw;
+  top: 23vh;
+  left: 2vw;
  }
  
  button > svg {
@@ -338,3 +338,4 @@ h2{
   position: relative;
   top:1vh;
 }
+
