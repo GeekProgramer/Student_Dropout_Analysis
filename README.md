@@ -23,20 +23,34 @@ Link to Youtube : <a>https://youtu.be/OcbcOPlcDdo</a>
 
 Student_Dropout_Analysis/
 │
+
 ├── Jupyter Notebook/
+
 |
+
 │   ├── 01-student_dropout_analysis.ipynb
+
 │   ├── 02-datasets
+
 │   └── ...
 
 │
+
 ├── Web App/
+
 │   ├── app.py
+
 |   ├── static 
+
 │   └── templates
+
 |   
+
 │
+
 └── README.md
+
+
 
 ## CONTRIBUTING
 
