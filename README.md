@@ -30,9 +30,9 @@ Student_Dropout_Analysis/
 
 │   ├── 01-student_dropout_analysis.ipynb
 
-│   ├── 02-datasets
+│   └──  02-datasets
 
-│   └── ...
+│  
 
 │
 
