@@ -121,3 +121,22 @@ document.addEventListener("DOMContentLoaded", function () {
   
     updateChart();
 });
+document.addEventListener("DOMContentLoaded", function () {
+    const heatmapData = [
+        { x: 100, y: 100, value: 0.5 },
+        { x: 200, y: 200, value: 0.8 },
+        { x: 300, y: 300, value: 0.3 },
+        // Add more data points as needed
+    ];
+
+    // Create a heatmap instance
+    const heatmapInstance = h337.create({
+        container: document.getElementById('heatmapContainer'),
+    });
+
+    // Set the data
+    heatmapInstance.setData({
+        max: 1, // Maximum value in the dataset
+        data: heatmapData,
+    });
+});
