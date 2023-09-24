@@ -26,15 +26,9 @@ Student_Dropout_Analysis/
 
 ├── Jupyter Notebook/
 
-|
-
 │   ├── 01-student_dropout_analysis.ipynb
 
 │   └──  02-datasets
-
-│  
-
-│
 
 ├── Web App/
 
@@ -43,10 +37,6 @@ Student_Dropout_Analysis/
 |   ├── static 
 
 │   └── templates
-
-|   
-
-│
 
 └── README.md
 
