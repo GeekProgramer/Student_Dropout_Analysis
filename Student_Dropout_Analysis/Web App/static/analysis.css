@@ -136,7 +136,7 @@ text-decoration: none;
   padding-left: 1vw;
   position: relative;
   top: 30vh;
-  height: 2000px;
+  height: 1550px;
 }
 
 * {
@@ -317,7 +317,7 @@ color: #66d9ff;
 }
 .report{
   padding: 10px;
-  max-width: 700px;
+
 }
 .heading{
   padding: 10px;
@@ -338,4 +338,7 @@ h2{
   position: relative;
   top:1vh;
 }
-
+.img1{
+  position: relative;
+  left: 40px;
+}
