@@ -1,0 +1,304 @@
+body, html {
+  height: auto;
+  margin: 0;
+  
+  font-family: 'Ubuntu', sans-serif;
+  line-height: 180%;
+  color: #666;
+  text-align: center;
+  overflow-x: hidden;
+  position: relative;
+  background: url(img/Stonky.png) fixed; 
+  background-size: cover;
+  
+}
+body{
+  max-height: 100vh;
+}
+
+img{
+  width: 1520px;
+  height: 100px;
+  opacity: 0.7;
+}
+
+
+
+h3 {
+  position: relative;
+  top: 3vh;
+  left: 13px;
+  font-size: 50px;
+}
+.description{
+  font-size: 30px;
+  text-align: left;
+  max-width: 650px;
+  max-height: 700px;
+  position: relative;
+  left: 1vw;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color:rgba(175, 167, 167, 0.575);
+  border:2px solid ;
+  border-radius: 0.4em;
+  padding-left: 1vw;
+  top: 2vh;
+}
+.description2{
+position: relative;
+top: 6vh;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px; /* Adjust the gap between photos as needed */
+  position: relative;
+  left: 90vh;
+  top: -85vh;
+  max-width: 1200px;
+  background-color: rgba(175, 167, 167, 0.886);
+  border: 2px solid;
+  border-radius: 0.7em;
+  margin: 2px;
+  padding: 20px;
+  padding-right: 40px;
+}
+
+.grid-container img {
+  width: 400px;
+  height: 400px;
+}
+.large-image {
+  width: 100px; /* Adjust the size as needed, e.g., 200% to make it twice as large */
+  height: 120px;
+}
+button {
+  display: flex;
+  height: 3em;
+  width: 100px;
+  align-items: center;
+  justify-content: center;
+  background-color: #eeeeee4b;
+  border-radius: 3px;
+  letter-spacing: 1px;
+  transition: all 0.2s linear;
+  cursor: pointer;
+  border: none;
+  background: #fff;
+  position: relative;
+  top: -40vh;
+  left: 92vw;
+ }
+ 
+ button > svg {
+  margin-right: 5px;
+  margin-left: 5px;
+  font-size: 20px;
+  transition: all 0.4s ease-in;
+ }
+ 
+ button:hover > svg {
+  font-size: 1.2em;
+  transform: translateX(-5px);
+ }
+ 
+ button:hover {
+  box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff;
+  transform: translateY(-2px);
+ }
+a{
+text-decoration: none;
+}
+.graph-info{
+  font-size: 30px;
+  text-align: left;
+  background-color:rgba(175, 167, 167, 0.575);
+  border:2px solid ;
+  border-radius: 0.4em;
+
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  position: relative;
+  top: 21vh;
+  max-width: 1790px;
+  padding-left: 1vw;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.chartMenu {
+  width: 100vw;
+  height: 40px;
+  background: #1A1A1A;
+  color: rgba(54, 162, 235, 1);
+}
+.chartMenu p {
+  padding: 10px;
+  font-size: 20px;
+}
+.chartCard {
+  width: 100vw;
+  height: calc(100vh - 40px);
+  background: rgba(54, 162, 235, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.chartBox {
+  width: 1100px;
+  height:600px;
+  padding: 20px;
+  border-radius: 20px;
+  border: solid 3px rgba(175, 167, 167, 0.575);
+  background: white;
+  position: relative;
+  top: 10vh;
+}
+
+.category {
+  position: relative;
+  top:3px;
+  left: 30px;
+}
+
+.category select {
+  padding: 8px;
+  font-size: 16px;
+  border: 2px solid #007bff; 
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #fff; 
+  color: #333; 
+  transition: all 0.3s ease; 
+  position: relative;
+  top: 20vh;
+  left: -40vh;
+}
+
+
+.category select:hover {
+  border-color: #66d9ff; 
+  box-shadow: 0 0 10px rgba(102, 217, 255, 0.5); 
+  transform: scale(1.02); 
+}
+
+
+.category select::after {
+  content: "\25BC"; 
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  
+  pointer-events: none; 
+}
+
+
+.category select:hover::after {
+  color: #66d9ff;
+}
+
+.class {
+position: relative;
+top: 3px;
+left: 20px;
+}
+
+.class select {
+padding: 8px;
+font-size: 16px;
+border: 2px solid #007bff; 
+border-radius: 4px;
+box-sizing: border-box;
+background-color: #fff; 
+color: #333; 
+transition: all 0.3s ease; 
+position: relative;
+top: 15vh;
+left: -5vw;
+}
+
+
+.class select:hover {
+border-color: #66d9ff; 
+box-shadow: 0 0 10px rgba(102, 217, 255, 0.5); 
+transform: scale(1.02); 
+}
+
+
+.class select::after {
+content: "\25BC"; 
+position: absolute;
+top: 50%;
+right: 10px;
+transform: translateY(-50%);
+color: #333; 
+pointer-events: none; 
+}
+
+.class select:hover::after {
+color: #66d9ff; 
+}
+
+.year {
+position: relative;
+top: 3px;
+left: -55px;
+}
+
+.year select {
+padding: 8px;
+font-size: 16px;
+border: 2px solid #007bff; 
+border-radius: 4px;
+box-sizing: border-box;
+background-color: #fff; 
+color: #333; 
+transition: all 0.3s ease; 
+position: relative;
+left: 15vw;
+top: 10vh;
+}
+
+.year select:hover,
+.year select:focus {
+border-color: #66d9ff; 
+box-shadow: 0 0 10px rgba(102, 217, 255, 0.5); 
+transform: scale(1.02); 
+}
+
+
+.year select::after {
+content: "\25BC"; 
+position: absolute;
+top: 50%;
+right: 10px;
+transform: translateY(-50%);
+color: #333; 
+pointer-events: none; 
+}
+
+
+.year select:hover::after,
+.year select:focus::after {
+color: #66d9ff; 
+}
+
+
+
+.categories select:focus {
+  outline: none;
+  border-color: #7e9bf0;
+  box-shadow: 0 0 5px #7e9bf0;
+}
+.age select:focus {
+  outline: none;
+  border-color: #7e9bf0;
+  box-shadow: 0 0 5px #7e9bf0;
+}
+
+#popover {
+  font-size: 14px;
+}

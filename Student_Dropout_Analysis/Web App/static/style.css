@@ -1,0 +1,273 @@
+
+body, html {
+    height: 100%;
+    margin:0;
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 180%;
+    color: #666;
+    text-align: center;
+    overflow-x: hidden;
+}
+    
+.parallax1 {
+    position: relative;
+    min-height: 100vh;
+    background-image: url(img/indianclassrom.png);
+    background-color: rgba(255, 255, 255, 1);
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.parallax1::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    right: 100px;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/banner.png); 
+    background-size: 1550px 100px; 
+    background-repeat: no-repeat;
+    background-position: center;
+    top: -350px;
+    opacity: 0.7;
+    
+}
+
+
+
+.parallax2 {
+    background-image: url(img/BBG.png);
+    min-height: 70%;
+}
+.parallax3 {
+    background-image: url(img/BG.png);
+    min-height: 70%;
+}
+.parallax4 {
+    background-image: url(img/bulb.jpg);
+    min-height: 70%;
+}
+.parallax5 {
+    background-image: url(img/outcome.png);
+    min-height: 70%;
+}
+.parallax6 {
+    background-image: url(img/jar2.png);
+    min-height: 90%;
+}
+
+
+.parallax1, .parallax2, .parallax3, .parallax4, .parallax5, .parallax6 {
+    position: relative;
+    opacity: 0.9;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.head {
+    position: absolute;
+    color: #fff;
+    font-size: 500%;
+    top: 50%;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 20px;
+    animation: drop 2.0s ease, colorChange 4.0s ease forwards;
+    cursor: pointer;
+    font-weight: bold;
+    
+}
+.head:hover{
+    color:transparent;
+}
+
+
+.head:hover{
+    color:transparent;
+}
+.bottom {
+    position: relative;
+    color: #fff;
+    font-size: 500%;
+    top: 50%;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 20px;
+    animation: drop 2.0s ease;
+    cursor: pointer;
+    left: 310px;
+    top: 100px;
+
+}
+
+
+section {
+    overflow: auto;
+    padding: 50px 50px;
+    position: relative;
+    
+
+}
+
+footer{
+    width: 100%;
+    background-color: #323232;
+    color: #f2f2f2;
+    height: 3vh;
+    text-align: center;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
+@media (max-width:800px) {
+    .head{
+        font-size: 200%;
+    }
+   
+}
+
+
+@keyframes drop {
+    0% {
+      opacity: 0;
+      transform: translateY(-80px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+ .parallax6 .links{
+    position: relative;
+    top: 200px;
+    left: 140px;
+
+  }
+  .links a{
+    font-size: 20px;
+    text-decoration: none; 
+    position: relative;
+    text-align: right;
+    color: #000;
+  }
+
+.links a::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px; 
+    bottom: 0;
+    left: 0;
+    background-color: #0073e6;
+    transition: width 0.3s ease;
+}
+
+.links a:hover::before {
+    width: 100%;
+}
+.links .first{
+    position: relative;
+    left: -122px;
+}
+p{
+    text-align: left;
+    padding-left: 2%;
+}
+button {
+    position: absolute;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+    position: relative;
+    top: 48vh;
+    left: 43vw;
+   }
+   
+   button.learn-more {
+    width: 12rem;
+    height: auto;
+   }
+   
+   button.learn-more .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: #282936;
+    border-radius: 1.625rem;
+   }
+   
+   button.learn-more .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+   }
+   
+   button.learn-more .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+   }
+   
+   button.learn-more .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.29rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+    transform: rotate(45deg);
+   }
+   
+   button.learn-more .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: #282936;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+   }
+   
+   button:hover .circle {
+    width: 100%;
+   }
+   
+   button:hover .circle .icon.arrow {
+    background: #fff;
+    transform: translate(1rem, 0);
+   }
+   
+   button:hover .button-text {
+    color: #fff;
+   }
+
+  @import url('https://fonts.googleapis.com/css?family=Ubuntu'); /*IMPORTANT*/
+
+
