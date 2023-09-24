@@ -2,7 +2,7 @@
 In our Analysis, we discovered and explored dropout rates of school education. In the project, we have used many visualization methods to extract some valuable information from the dataset which can be used by the government to look into it and implement the necessary tasks.
 
 ### Current Status
-Hosted on Netlify
+Hosted on Netlify</br>
 Link : <a>https://dropix.netlify.app/</a>
 
 ### Working Demo
