@@ -16,4 +16,4 @@ def analysis():
 def index():
     return render_template('index.html')
 
-app.run(debug=False)
+app.run(debug=True)

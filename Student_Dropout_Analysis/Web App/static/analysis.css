@@ -38,7 +38,7 @@ h3 {
   position: relative;
   left: 1vw;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  background-color:rgba(175, 167, 167, 0.575);
+  background-color:rgba(238, 224, 224, 0.575);
   border:2px solid ;
   border-radius: 0.4em;
   padding-left: 1vw;
@@ -56,7 +56,7 @@ top: 6vh;
   left: 90vh;
   top: -85vh;
   max-width: 1200px;
-  background-color: rgba(175, 167, 167, 0.886);
+  background-color: rgba(238, 224, 224, 0.575);
   border: 2px solid;
   border-radius: 0.7em;
   margin: 2px;
@@ -69,7 +69,7 @@ top: 6vh;
   height: 400px;
 }
 .large-image {
-  width: 100px; /* Adjust the size as needed, e.g., 200% to make it twice as large */
+  width: 100px; 
   height: 120px;
 }
 button {
@@ -112,7 +112,7 @@ text-decoration: none;
 .graph-info{
   font-size: 30px;
   text-align: left;
-  background-color:rgba(175, 167, 167, 0.575);
+  background-color:rgba(238, 224, 224, 0.575);
   border:2px solid ;
   border-radius: 0.4em;
 
@@ -141,7 +141,7 @@ text-decoration: none;
 .chartCard {
   width: 100vw;
   height: calc(100vh - 40px);
-  background: rgba(54, 162, 235, 0.2);
+  background: rgba(238, 224, 224, 0);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -151,7 +151,7 @@ text-decoration: none;
   height:600px;
   padding: 20px;
   border-radius: 20px;
-  border: solid 3px rgba(175, 167, 167, 0.575);
+  border: solid 3px rgba(238, 224, 224, 0.575);
   background: white;
   position: relative;
   top: 10vh;
