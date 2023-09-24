@@ -315,6 +315,17 @@ color: #66d9ff;
 #popover {
   font-size: 14px;
 }
+.report{
+  padding: 10px;
+  max-width: 700px;
+}
+.heading{
+  padding: 10px;
+
+}
+p{
+  padding: 6px;
+}
 .data{
   position: relative;
   top: 4vh;
