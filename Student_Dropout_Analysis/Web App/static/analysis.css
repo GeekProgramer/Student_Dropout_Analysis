@@ -54,7 +54,7 @@ top: 6vh;
   gap: 10px; /* Adjust the gap between photos as needed */
   position: relative;
   left: 90vh;
-  top: -85vh;
+  top: -81vh;
   max-width: 1200px;
   background-color: rgba(238, 224, 224, 0.575);
   border: 2px solid;
@@ -75,7 +75,7 @@ top: 6vh;
 button {
   display: flex;
   height: 3em;
-  width: 100px;
+  width: 90px;
   align-items: center;
   justify-content: center;
   background-color: #eeeeee4b;
@@ -86,9 +86,9 @@ button {
   border: none;
   background: #fff;
   position: relative;
-  top: -40vh;
-  left: 92vw;
- }
+  top: 23vh;
+  left: 2vw;
+}
  
  button > svg {
   margin-right: 5px;
@@ -136,7 +136,7 @@ text-decoration: none;
   padding-left: 1vw;
   position: relative;
   top: 30vh;
-  height: 220px;
+  height: 1750px;
 }
 
 * {
@@ -173,6 +173,48 @@ text-decoration: none;
   top: 2vh;
   margin-bottom: 4%;
 }
+.type {
+  position: relative;
+  top:38px;
+  left: -130px;
+}
+
+.type select {
+  padding: 6px;
+  font-size: 16px;
+  border: 2px solid #007bff; 
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #fff; 
+  color: #333; 
+  transition: all 0.3s ease; 
+  position: relative;
+  top: 10.2vh;
+  left: 25vw;
+}
+
+
+.type select:hover {
+  border-color: #66d9ff; 
+  box-shadow: 0 0 10px rgba(102, 217, 255, 0.5); 
+  transform: scale(1.02); 
+}
+
+
+.type select::after {
+  content: "\25BC"; 
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  
+  pointer-events: none; 
+}
+
+
+.type select:hover::after {
+  color: #66d9ff;
+}
 
 .category {
   position: relative;
@@ -191,7 +233,7 @@ text-decoration: none;
   transition: all 0.3s ease; 
   position: relative;
   top: 10vh;
-  left: 25vw;
+  left: 27vw;
 }
 
 
@@ -271,8 +313,8 @@ background-color: #fff;
 color: #333; 
 transition: all 0.3s ease; 
 position: relative;
-left: 68vw;
-top: 0vh;
+left: 65vw;
+top: 3px;
 }
 
 .year select:hover,
@@ -317,8 +359,10 @@ color: #66d9ff;
 }
 .report{
   padding: 10px;
-  max-width: 700px;
+  margin-right: 660px;
+  font-size: 20px;
 }
+
 .heading{
   padding: 10px;
 
@@ -337,4 +381,23 @@ p{
 h2{
   position: relative;
   top:1vh;
+}
+.img1{
+  position: relative;
+  left: 40px;
+}
+.grid-container1{
+  position: relative;
+  left: 110vh;
+  top: -211vh;
+  max-width: 1200px;
+  margin: 2px;
+  padding: 20px;
+  padding-right: 40px;
+
+}
+.grid-container1 img {
+  width: 400px;
+  height: 400px;
+  padding: 25px;
 }

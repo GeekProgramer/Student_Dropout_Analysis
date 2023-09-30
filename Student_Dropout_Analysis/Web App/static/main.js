@@ -57,52 +57,93 @@ document.addEventListener("DOMContentLoaded", function () {
         const category = document.getElementById("categoryDropdown").value;
         const selectedClass = document.getElementById("classDropdown").value;
         const year = document.getElementById("yearDropdown").value;
-
+        const type = document.getElementById("typeDropdown").value; // Get the selected chart type
+    
         try {
-            
-            const data = await fetchData(category, selectedClass, year);
-
-            
+            const data = await fetchData(category, selectedClass, year, type);
+    
             if (myChart) {
-                myChart.destroy(); 
+                myChart.destroy();
             }
-
-            myChart = new Chart(ctx, {
-                type: 'line', 
-                data: {
-                    labels: data.labels,
-                    datasets: [
-                        {
-                            label: 'Boys',
-                            data: data.data1,
-                            backgroundColor: 'rgba(54, 162, 235, 0.2)',
-                            borderColor: 'rgba(54, 162, 235, 1)',
-                            borderWidth: 1,
-                        },
-                        {
-                            label: 'Girls',
-                            data: data.data2,
-                            backgroundColor: 'rgba(255, 26, 104, 0.2)',
-                            borderColor: 'rgba(255, 26, 104, 1)',
-                            borderWidth: 1,
-                        },
-                        {
-                            label: 'Total',
-                            data: data.data3,
-                            backgroundColor: 'rgba(75, 192, 192, 0.2)',
-                            borderColor: 'rgba(75, 192, 192, 1)',
-                            borderWidth: 1,
-                        },
-                    ],
-                },
-                options: {
-                    scales: {
-                        y: {
-                            beginAtZero: true,
+    
+            if (type === "line") {
+                // Create a line chart
+                myChart = new Chart(ctx, {
+                    type: 'line',
+                    data: {
+                        labels: data.labels,
+                        datasets: [
+                            {
+                                label: 'Boys',
+                                data: data.data1,
+                                backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                                borderColor: 'rgba(54, 162, 235, 1)',
+                                borderWidth: 1,
+                            },
+                            {
+                                label: 'Girls',
+                                data: data.data2,
+                                backgroundColor: 'rgba(255, 26, 104, 0.2)',
+                                borderColor: 'rgba(255, 26, 104, 1)',
+                                borderWidth: 1,
+                            },
+                            {
+                                label: 'Total',
+                                data: data.data3,
+                                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                                borderColor: 'rgba(75, 192, 192, 1)',
+                                borderWidth: 1,
+                            },
+                        ],
+                    },
+                    options: {
+                        scales: {
+                            y: {
+                                beginAtZero: true,
+                            },
                         },
                     },
-                },
-            });
+                });
+                
+            } else if (type === "bar") {
+                // Create a bar chart
+                myChart = new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels: data.labels,
+                        datasets: [
+                            {
+                                label: 'Boys',
+                                data: data.data1,
+                                backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                                borderColor: 'rgba(54, 162, 235, 1)',
+                                borderWidth: 1,
+                            },
+                            {
+                                label: 'Girls',
+                                data: data.data2,
+                                backgroundColor: 'rgba(255, 26, 104, 0.2)',
+                                borderColor: 'rgba(255, 26, 104, 1)',
+                                borderWidth: 1,
+                            },
+                            {
+                                label: 'Total',
+                                data: data.data3,
+                                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                                borderColor: 'rgba(75, 192, 192, 1)',
+                                borderWidth: 1,
+                            },
+                        ],
+                    },
+                    options: {
+                        scales: {
+                            y: {
+                                beginAtZero: true,
+                            },
+                        },
+                    },
+                });
+            }
         } catch (error) {
             console.error("Error updating chart:", error);
         }
@@ -118,6 +159,10 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("yearDropdown").addEventListener("change", async () => {
         await updateChart(); 
     });
+    document.getElementById("typeDropdown").addEventListener("change", async () =>{
+        await updateChart();
+    });
   
     updateChart();
+    
 });
