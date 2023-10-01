@@ -361,6 +361,9 @@ color: #66d9ff;
   padding: 10px;
   margin-right: 660px;
   font-size: 20px;
+
+
+
 }
 
 .heading{
@@ -386,6 +389,7 @@ h2{
   position: relative;
   left: 40px;
 }
+
 .grid-container1{
   position: relative;
   left: 110vh;
@@ -401,3 +405,4 @@ h2{
   height: 400px;
   padding: 25px;
 }
+
