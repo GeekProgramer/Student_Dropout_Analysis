@@ -136,7 +136,7 @@ text-decoration: none;
   padding-left: 1vw;
   position: relative;
   top: 30vh;
-  height: 1550px;
+  height: 1750px;
 }
 
 * {
@@ -359,8 +359,13 @@ color: #66d9ff;
 }
 .report{
   padding: 10px;
+  margin-right: 660px;
+  font-size: 20px;
+
+
 
 }
+
 .heading{
   padding: 10px;
 
@@ -384,3 +389,20 @@ h2{
   position: relative;
   left: 40px;
 }
+
+.grid-container1{
+  position: relative;
+  left: 110vh;
+  top: -211vh;
+  max-width: 1200px;
+  margin: 2px;
+  padding: 20px;
+  padding-right: 40px;
+
+}
+.grid-container1 img {
+  width: 400px;
+  height: 400px;
+  padding: 25px;
+}
+
